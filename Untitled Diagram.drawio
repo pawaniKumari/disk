@@ -1,9 +1,90 @@
-<mxfile host="app.diagrams.net" modified="2023-11-04T12:22:13.074Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" version="22.0.8" etag="sRQEYbl-Qmdv_V2zgNL9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-04T12:59:34.154Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="CPXGCR5nopNyDGU7qy0r" version="22.0.8" type="github">
   <diagram name="Page-1" id="dbmajwEpt5TfZDztK1Wg">
-    <mxGraphModel>
+    <mxGraphModel dx="724" dy="368" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="47LOYNl90cgC4bxJYpm7-1" value="Assumptions&#xa;•&#x9;Customer and customer profile are same.&#xa;•&#x9;Assume author_id, vendor_id, emp_id, payment_id are primary keys of author, vender, employee and payment. &#xa;•&#x9;Inventory title can uniquely identify inventory.&#xa;•&#x9; Assume a customer has multiple previous orders and respective status.&#xa;•&#x9;Assume attributes of shopping cart are description and number of items." style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="560" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-16" value="Customer &amp;lt; Customer_id, email, password, username &amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="170" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-18" value="Payment_methods &amp;lt; Customer_id(FK), Payment_methods &amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="210" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-19" value="&lt;p style=&quot;text-align:justify&quot; class=&quot;MsoNormal&quot;&gt;Vendor &amp;lt; &lt;u&gt;Vendor_id&lt;/u&gt;, Name, Contact_infromation &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="650" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-20" value="&lt;p style=&quot;text-align:justify&quot; class=&quot;MsoNormal&quot;&gt;Order_note &amp;lt; &lt;u&gt;Order_id(FK)&lt;/u&gt;,&amp;nbsp;&lt;u&gt;Note&lt;/u&gt; &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="610" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-21" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Order_book_detail &amp;lt; &lt;u&gt;Order_id(FK)&lt;/u&gt;, Quantity, Title, Price &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="570" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-22" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Order &amp;lt; &lt;u&gt;Order_id&lt;/u&gt;, Status, Customer_id(FK) &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="530" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-23" value="&lt;p style=&quot;text-align:justify&quot; class=&quot;MsoNormal&quot;&gt;Author &amp;lt; &lt;u&gt;Author_id&lt;/u&gt; , Name, Biography &amp;gt;&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="490" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-24" value="&lt;p style=&quot;text-align:justify&quot; class=&quot;MsoNormal&quot;&gt;Book &amp;lt; &lt;u&gt;ISBN&lt;/u&gt;, Format, Title, Publication_date, Price, Genre, Inventory_title(FK)&amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="450" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-25" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Purchase_history &amp;lt; &lt;u&gt;Customer_id(FK)&lt;/u&gt;,&amp;nbsp;&lt;u&gt;Previous_order&lt;/u&gt;, Status &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="410" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-26" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Shopping_cart &amp;lt; &lt;u&gt;Customer_id(FK)&lt;/u&gt;,&amp;nbsp;&lt;u&gt;ISBN(FK)&lt;/u&gt; , Item_description, No_of_items &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="370" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-27" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Favourite_author &amp;lt; &lt;u&gt;Customer_id(FK)&lt;/u&gt;,&lt;u style=&quot;background-color: initial;&quot;&gt;Author&lt;/u&gt;&lt;span style=&quot;background-color: initial;&quot;&gt; &amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="330" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-28" value="&lt;p style=&quot;text-align:justify&quot; class=&quot;MsoNormal&quot;&gt;Shipping_address &amp;lt; &lt;u&gt;Customer_id(FK)&lt;/u&gt;,&amp;nbsp;&lt;u&gt;Shipping_address&lt;/u&gt; &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="250" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-29" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Favourite_genre &amp;lt; &lt;u&gt;Customer_id(FK)&lt;/u&gt;,&amp;nbsp;&lt;u style=&quot;background-color: initial;&quot;&gt;Genre&lt;/u&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-30" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Book_authored &amp;lt; &lt;u&gt;ISBN(FK)&lt;/u&gt;,&amp;nbsp;&lt;u&gt;Author_id(FK) &lt;/u&gt;&amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1050" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-31" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Order_process_employee &amp;lt; &lt;u&gt;Emp_id(FK)&lt;/u&gt;,&amp;nbsp;&lt;u&gt;Order_id(FK)&lt;/u&gt; &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-32" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Ordered_bookby_customer &lt;u&gt;&amp;lt; ISBN(FK)&lt;/u&gt;, &lt;u&gt;Order_id(FK)&lt;/u&gt; &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="970" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-33" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Order_payment &amp;lt; &lt;u&gt;Payment_id&lt;/u&gt;, Customer_id(FK) , Order_id(FK), Payment_date &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="930" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-34" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Rate &amp;lt; &lt;u&gt;ISBN(FK),&lt;/u&gt; &lt;u&gt;Customer_id(FK)&lt;/u&gt;, Rating &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="890" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-35" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Employee_responsibility &amp;lt; &lt;u&gt;Emp_id(FK)&lt;/u&gt;,&amp;nbsp;&lt;u&gt;Responsibility&lt;/u&gt; &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="850" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-36" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Employee_skill &amp;lt; Emp_id(FK), &lt;u&gt;Skill&amp;nbsp;&lt;/u&gt;&amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="810" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-37" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Employee &amp;lt; &lt;u&gt;Emp_id&lt;/u&gt; , Name, Role &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="770" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-38" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Inventory &amp;lt; &lt;u&gt;Title&lt;/u&gt;, Stock_quantity, Reordering_threshold &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="730" width="390" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-39" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Vendor_speciality &amp;lt; &lt;u&gt;Vendor_id(FK)&lt;/u&gt;,&amp;nbsp;&lt;u&gt;Speciality&lt;/u&gt;&amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="690" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-40" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Employee_manage_Inventory &amp;lt; &lt;u&gt;Emp_id(FK)&lt;/u&gt;, &lt;u&gt;Inventory_title(FK)&lt;/u&gt; &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1130" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-41" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Book_supplyby_vendor &amp;lt; &lt;u&gt;Vendor_id(FK)&lt;/u&gt;,&amp;nbsp;&lt;u&gt;ISBN(FK)&lt;/u&gt;, Title, Quantity, Price &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1090" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="47LOYNl90cgC4bxJYpm7-43" value="&lt;p style=&quot;&quot; class=&quot;MsoNormal&quot;&gt;Customer_support_employee &amp;lt; &lt;u&gt;Emp_id(FK)&amp;nbsp;&lt;/u&gt;, &lt;u&gt;Customer_id(FK)&lt;/u&gt; &amp;gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1170" width="930" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
